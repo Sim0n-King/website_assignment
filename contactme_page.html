@@ -51,7 +51,7 @@
 		<br><br>
 		<input type ="text" id="phone" name="phone"
 		pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-		placeholder="(555)-555-5555">
+		placeholder="(555)-555-5555" required>
 		<br><br>
 		<label for="role">Select Role:</label>
 		<br><br>
@@ -61,6 +61,11 @@
 			<option value="dancer">Dancer</option>
 			<option value="performer">Performer</option>
 		</select>
+		<br><br>
+		<label for="contactMe">
+		Contact Me
+		<input type="checkbox" id="contactMe" name="contactMe" required>
+		</label>
 		<br><br>
 		<label for="comments">Additional info and comments:</label>
 		<br><br>
