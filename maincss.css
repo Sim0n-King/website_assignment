@@ -30,15 +30,19 @@ nav button:hover{
 .HorizontalBox{
 	display: flex;
 	justify-content: space-between;
-	margin-left: 400px;
-	margin-right: 400px;
-	margin-top: 50px;
+	width: 90%;
+	max-width: 1000px;
+	
+	margin: 50px auto;
+	gap: 20px;
 }
 
 .LeftSide{
 	display: block;
 	background-color: #e0e0e0;
 	text-align: left;
+	flex: 1;
+	padding: 15px;
 }
 
 @media (hover: hover) {
@@ -49,7 +53,6 @@ nav button:hover{
 }
 
 .RightSide{
-	margin-left:100px;
 	flex: 0 0 auto;
 }
 
@@ -87,4 +90,26 @@ ul li:last-child{
 	border: 3px solid black;
 	border-radius: 15px;
 	color: brown;
+}
+
+section {
+	display: block;
+	border: 10px solid lightgray;
+	background-color: lightgray;
+	border-radius: 15px 15px;
+	margin: 20px auto;
+	width: 80%;
+	max-width: 800px;
+	
+}
+
+@media (max-width: 768px) {
+	body{
+		font-size:16px;
+		width: 100%;
+	}
+	
+	video{
+		width: 100%;
+	}
 }
